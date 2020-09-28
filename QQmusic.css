@@ -255,6 +255,14 @@
     position: relative;
 }
 
+
+.list li .tuijian_img{
+    width: 224px;
+    height: 224px;
+    overflow: hidden;
+}
+
+
 .list li img{
     width: 224px;
     height: 224px;
@@ -329,12 +337,29 @@
     position: relative;
 }
 
-.NewsongList img{
+/*.NewSongList .NewSong_img{*/
+/*    height: 98px;*/
+/*    width: 98px;*/
+/*    overflow: hidden;*/
+/*}*/
+
+.NewsongList .NewSong_img{
     height: 98px;
     width: 98px;
     position: absolute;
     left: 1px;
     top:1px;
+    overflow: hidden;
+}
+
+.NewsongList .NewSong_img img{
+    height: 98px;
+    width: 98px;
+    position: absolute;
+    left: 1px;
+    top:1px;
+    transform: scale(1);
+    transition: transform 600ms;
 }
 
 .NewsongList .note1{
@@ -562,83 +587,90 @@
     overflow: hidden;
     height: 700px;
     background-image: linear-gradient(#f2f2f2, #fafafa);
-    /*background-color: #ff6940;*/
-    position: relative;
+    background-color: #47b7bf;
     box-sizing: border-box;
 }
+
 
 .MV h3{
     font-size: 35px;
     margin-top:52px;
     text-align: center;
-    letter-spacing: 10px;
+    letter-spacing: 6px;
 }
 
-.MV .subtitle{
+.MV .subtitle2{
+
     list-style: none;
-    width: 80%;
-    position: absolute;
-    top:14%;
-    left: 28%;
-    padding-top: 30px;
+    width: 540px;
+    margin: 20px auto;
+    padding: 0px;
     overflow: hidden;
+
 }
 
-.MV .subtitle li{
+.MV li{
     float: left;
     font-size: 15px;
-    margin-right: 8%;
+    margin-right: 60px;
 }
 
-
-.MV .subtitle li:hover{
+.MV li:hover{
     color: #31c27c;
 }
 
-
-.MV .MV_content{
-    width: 84%;
+.MV .MVList{
+    width: 1200px;
     height: 500px;
-    margin: 10px auto;
-    position: absolute;
-    left: 10%;
-    right: 10%;
-}
-
-
-
-
-.MV_content .MV_BOX{
-    width: 18%;
-    height: 45%;
-    margin: 10px 10px;
-    float: left;
-    z-index: 2;
-}
-
-.MV_BOX .MV_img{
-    width: 98%;
-    height: 55%;
-    margin: 2px auto;
-    overflow: hidden;
+    margin: 0px auto;
     position: relative;
 }
 
-.MV_BOX .p1{
+.MV .MVList .MV_BOX{
+    width: 226px;
+    height: 220px;
+    float: left;
+    margin-left: 10px;
+}
+
+.MV .MVList .MV_BOX .MV_img{
+    width: 226px;
+    height: 127px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.MV .MVList .MV_BOX img{
+    width: 226px;
+    height: 127px;
+}
+
+.MV .MVList .MV_BOX .MV_title1{
+    float: left;
     width: 100%;
     font-size: 15px;
-    margin-top: 5px;
+    margin-top: 58%;
+    margin-left: 2%;
 }
 
-.MV_BOX .p1:hover{
-    color:#31c27c;
+.MV .MVList .MV_BOX .MV_title1:hover{
+    color: #31c27c;
 }
 
-.MV_BOX .p2{
-    font-size: 13px;
-    color: #999999;
-    margin-left: 2px;
-    margin-top: 5px;
+.MV .MVList .MV_BOX .MV_title2{
+    float: left;
+    width: 100%;
+    font-size: 12px;
+    margin-left: 2%;
+    color:#999999;
+}
+
+.MV .MVList .MV_BOX .MV_title3{
+    float: left;
+    width: 100%;
+    font-size: 12px;
+    margin-left: 2%;
+    color:#999999;
 }
 
 
@@ -670,6 +702,7 @@
 
 .download dt{
     margin-bottom: 40px;
+    margin-left: 20px;
 }
 
 .download dd{
@@ -684,9 +717,102 @@
     margin-right: 15px;
 }
 
-.download .platform img{
+.download .platform2{
+    float: left;
+    width: 90px;
+    height: 120px;
+    margin-right: 15px;
+}
+
+.download .platform .demo{
+    width: 50px;
+    height: 48px;
+    border:0px solid;
+    margin-left: 10px;
+    background-image: url('https://y.gtimg.cn/mediastyle/yqq/img/footer.png?max_age=2592000&v=6edf90cb3a1fadd1144aee755c539735&v=6edf90cb3a1fadd1144aee755c539735');
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
     margin-left: 15px;
 }
+
+.download .platform2 .demo{
+    width: 50px;
+    height: 48px;
+    border:0px solid;
+    margin-left: 10px;
+    background-image: url('https://y.gtimg.cn/mediastyle/yqq/img/footer.png?max_age=2592000&v=6edf90cb3a1fadd1144aee755c539735&v=6edf90cb3a1fadd1144aee755c539735');
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    margin-left: 15px;
+}
+
+
+.download .platform .demo1{
+    background-position: 0px 0px;
+}
+
+.download .platform .demo1:hover{
+    background-position: 0px -49px;
+}
+
+.download .platform .demo2{
+    background-position: -92px 0px;
+}
+
+.download .platform .demo2:hover{
+    background-position: -92px -49px;
+}
+
+.download .platform .demo3{
+    background-position: -184px 0px;
+}
+
+.download .platform .demo3:hover{
+    background-position: -184px -49px;
+}
+
+
+.download .platform .demo4{
+    background-position: -276px 0px;
+}
+
+.download .platform .demo4:hover{
+    background-position: -276px -49px;
+}
+
+.download .platform2 .demo5{
+    background-position: -368px 0px;
+}
+
+.download .platform2 .demo5:hover{
+    background-position: -368px -49px;
+}
+
+.download .platform2 .demo6{
+    background-position: -460px 0px;
+}
+
+.download .platform2 .demo6:hover{
+    background-position: -460px -49px;
+}
+
+.download .platform2 .demo7{
+    background-position: -552px 0px;
+}
+
+.download .platform2 .demo7:hover{
+    background-position: -552px -49px;
+}
+
+.download .platform2 .demo8{
+    background-position: -644px 0px;
+}
+
+.download .platform2 .demo8:hover{
+    background-position: -644px -49px;
+}
+
+
 
 .download .platform .name{
     width: 80px;
@@ -694,6 +820,16 @@
     margin-top: 10px;
     line-height: 40px;
     text-align: center;
+    margin-left: -5px;
+}
+
+.download .platform2 .name{
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+    line-height: 40px;
+    text-align: center;
+    margin-left: -5px;
 }
 
 .team{
@@ -725,7 +861,6 @@
     width: 1300px;
     height: 200px;
     margin: 0px auto;
-    /*border: 2px solid red;*/
     position: relative;
 }
 
@@ -770,11 +905,23 @@
 }
 
 
+
+
+
 /*   ---------------  播放  ------------------   */
 
-
-.list #m1 img{
+.list li .tuijian_img img{
     transform: scale(1);
+    transition: transform 1s;
+}
+
+/*.list #m1 img{*/
+/*    transform: scale(1);*/
+/*    transition: transform 1s;*/
+/*}*/
+
+.list li:hover .tuijian_img img{
+    transform: scale(1.1);
     transition: transform 1s;
 }
 
@@ -799,8 +946,8 @@
     width: 224px;
     position: absolute;
     left: 0;right: 0;bottom: 0;top: -50px;margin:auto ;
-    background-color: rgba(0,0,0,0.3);
-    transform: scale(0);
+    background-color: transparent;
+    /*transform: scale(0);*/
     line-height: 390px;
     text-align: center;
     color: white;
@@ -843,7 +990,7 @@
 .NewSong .cover_newsong{
     width: 98px;
     height: 98px;
-    background-color: rgba(0,0,0,0.3);
+    background-color: transparent;
     position: absolute;
     z-index: 2;
     transform: scale(0);
@@ -859,6 +1006,7 @@
     position: absolute;
     margin: 50% 50%;
     transform: translate(-50%,-50%);
+    transition: transform 600ms;
 }
 
 .cover_newsong .trangle_newsong{
@@ -871,6 +1019,7 @@
     z-index: 4;
     margin: 50% 50%;
     transform: translate(-20%,-50%);
+    transition: transform 600ms;
 }
 
 
@@ -885,53 +1034,50 @@
 }
 
 
-.MV_BOX .MV_img img{
-    width: 98%;
-    transform: scale(1);
-    transform-origin: 40% 75%;
-    transition: transform 600ms;
-}
-
-
-.MV_BOX .MV_img:hover img{
-    transform: scale(1.1);
-    transform-origin: 40% 75%;
-    transition: transform 800ms;
-}
-
-.MV_BOX .MV_img:hover .MV_circle{
-    transform: scale(1);
-    transform-origin: 40% 75%;
-    transition: transform 800ms;
-}
-
-
-.MV_BOX .MV_circle{
-    height: 50px;
+.MV_img .MV_cover{
     width: 50px;
+    height: 50px;
     border-radius: 50%;
-    background-color: rgba(165,173,170,0.58);
+    background-color: rgba(207,212,234,0.48);
     position: absolute;
-    margin: -40% 38%;
-    transform: translate(-50% -50%);
-    z-index: 2;
-    transform: scale(0);
+    left: 0;
+    top:0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform: scale(0) ;
     transition: transform 600ms;
+    z-index: 2;
 }
 
-
-.MV_BOX .MV_trangle{
+.MV_cover .MV_trangle{
     width: 0px;
     height: 0px;
-    border-width: 8px 14px 8px 14px;
+    z-index: 3;
+    border-width: 8px 0px 8px 10px;
     border-color: transparent transparent transparent black;
     border-style: solid;
     position: absolute;
-    z-index: 3;
-    margin: 50% 50%;
-    transform: translate(-20%,-50%);
+    left: 0;
+    top:0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+}
+
+
+.MV_img:hover img{
+    transform: scale(1.1);
     transition: transform 600ms;
 }
+
+.MV_img:hover .MV_cover{
+    transform: scale(1);
+    transition: transform 600ms;
+}
+
+
 
 
 
