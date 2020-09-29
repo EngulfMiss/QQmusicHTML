@@ -148,7 +148,7 @@
     right: 40px;
     top:300px;
     border-radius: 10px;
-    z-index: 3;
+    z-index: 6;
 
 }
 
@@ -214,12 +214,14 @@
     letter-spacing: 6px;
 }
 
-.tuijian .subtitle{
+.tuijian .subtitle2{
+
     list-style: none;
-    width: 800px;
+    width: 540px;
     margin: 20px auto;
     padding: 0px;
     overflow: hidden;
+
 }
 
 .xindie .subtitle li:hover{
@@ -228,7 +230,7 @@
 
 .tuijian li{
     float: left;
-    font-size: 20px;
+    font-size: 15px;
     margin-right: 60px;
 }
 
@@ -436,6 +438,14 @@
     box-sizing: border-box;
 }
 
+/*.xindie h3{*/
+/*    font-size: 35px;*/
+/*    margin-top:52px;*/
+/*    text-align: center;*/
+/*    letter-spacing: 6px;*/
+/*}*/
+
+
 .xindie h3{
     font-size: 35px;
     margin-top:52px;
@@ -443,41 +453,60 @@
     letter-spacing: 6px;
 }
 
+.xindie .subtitle2{
 
-.xindie .test{
     list-style: none;
-    width: 800px;
+    width: 540px;
     margin: 20px auto;
     padding: 0px;
     overflow: hidden;
+
 }
 
-.xindie .test li{
+
+.xindie .subtitle2 li{
     float: left;
-    font-size: 20px;
+    font-size: 15px;
     margin-right: 60px;
 }
 
 
-.xindie .test li:hover{
+.xindie .subtitle2 li:hover{
     color: #31c27c;
 }
 
 
-.xindie .list li{
+/*.xindie .list li{
     float: left;
     font-size: 20px;
     margin-right: 24px;
     margin-bottom: 3px;
-}
+}*/
 
 .xindie .list{
-    width: 1240px;
+    width: 1200px;
     margin:40px auto;
     /*margin-left: 21%;*/
     list-style-type: none;
     padding: 0;
     overflow: hidden;
+}
+
+.xindie .xindie_img{
+    width: 226px;
+    height: 226px;
+    float: left;
+    font-size: 20px;
+    margin-right: 24px;
+    margin-bottom: 3px;
+    overflow: hidden;
+    position: relative;
+}
+
+.xindie .xindie_img img{
+    width: 226px;
+    height: 226px;
+    float: left;
 }
 
 .xindie li .title{
@@ -513,16 +542,16 @@
 
 .ranktext .ranklist{
     float: left;
-    width: 200px;
+    width: 220px;
     height: 500px;
-    margin: 30px 18px;
+    margin: 30px 10px;
     background-color: turquoise;
     position: relative;
 }
 
 
 .ranktitle{
-    width: 160px;
+    width: 180px;
     height: 60px;
     /*background-color: #ff6940;*/
     position: absolute;
@@ -643,6 +672,7 @@
 .MV .MVList .MV_BOX img{
     width: 226px;
     height: 127px;
+    transition: transform 600ms;
 }
 
 .MV .MVList .MV_BOX .MV_title1{
@@ -910,32 +940,28 @@
 
 /*   ---------------  播放  ------------------   */
 
-.list li .tuijian_img img{
+.tuijian .list li .tuijian_img img{
     transform: scale(1);
     transition: transform 1s;
 }
 
-/*.list #m1 img{*/
-/*    transform: scale(1);*/
-/*    transition: transform 1s;*/
-/*}*/
 
-.list li:hover .tuijian_img img{
+.tuijian .list li:hover .tuijian_img img{
     transform: scale(1.1);
     transition: transform 1s;
 }
 
-.list li:hover .cover{
+.tuijian .list li:hover .cover{
     transform: scale(1);
     transition: transform 1s;
 }
 
-.list li:hover .circle_1{
+.tuijian .list li:hover .circle_1{
     transform: scale(1);
     transition: transform 1s;
 }
 
-.list li:hover .trangle{
+.tuijian .list li:hover .trangle{
     transform: scale(1);
     transition: transform 1s;
 }
@@ -962,7 +988,7 @@
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    background-color: rgba(191,188,199,0.62);
+    background-color: rgba(242,242,242,0.8);
     z-index: 3;
     position: absolute;
     left: 0px;
@@ -979,7 +1005,7 @@
     width: 0px;
     height: 0px;
     border-width: 10px 20px 10px 20px;
-    border-color: transparent transparent transparent black;
+    border-color: transparent transparent transparent rgba(0,0,0,0.8);
     border-style: solid;
     margin: 26px 26px;
 
@@ -1038,7 +1064,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: rgba(207,212,234,0.48);
+    background-color: rgba(242,242,242,0.8);;
     position: absolute;
     left: 0;
     top:0;
@@ -1055,7 +1081,7 @@
     height: 0px;
     z-index: 3;
     border-width: 8px 0px 8px 10px;
-    border-color: transparent transparent transparent black;
+    border-color: transparent transparent transparent rgba(0,0,0,0.8);
     border-style: solid;
     position: absolute;
     left: 0;
@@ -1076,6 +1102,154 @@
     transform: scale(1);
     transition: transform 600ms;
 }
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.xindie .list li .xindie_img img{
+    transform: scale(1);
+    transition: transform 1s;
+}
+
+
+.xindie .list li:hover .xindie_img img{
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+
+
+.xindie .xindie_cover{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgba(242,242,242,0.8);
+    transform: scale(0);
+    transition: transform 600ms;
+    z-index: 2;
+}
+
+.xindie .xindie_trangle{
+    width: 0px;
+    height: 0px;
+    border-width: 10px 20px 10px 20px;
+    border-color: transparent transparent transparent rgba(0,0,0,0.8);
+    border-style: solid;
+    margin: 24px 25px;
+    z-index: 3;
+}
+
+.xindie .list li:hover .xindie_img .xindie_cover{
+    transform: scale(1);
+    transition: transform 600ms;
+}
+
+
+.rank .rank_play{
+    width: 220px;
+    height: 60px;
+    position: absolute;
+    top: 17%;
+}
+
+.rank .rank_play .rank_cover{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    z-index: 2;
+    background-color: rgba(242,242,242,0.8);
+    position: absolute;
+    left: 0;top: 0;right: 0;bottom: 0;
+    margin: auto;
+    transform: scaleY(0);
+    transition: transform 200ms;
+}
+
+
+.rank .rank_play .rank_cover .rank_trangle{
+    width: 0px;
+    height: 0px;
+    border-width: 8px 0px 8px 12px;
+    border-color: transparent transparent transparent rgba(0,0,0,0.8);
+    border-style: solid;
+    position: absolute;
+    left: 0;top: 0;right: 0;bottom: 0;
+    margin: auto;
+    z-index: 3;
+}
+
+.ranklist:hover .rank_cover{
+    transform: scaleY(1);
+    transition: transform 200ms;
+}
+
+.ranklist:hover .quare{
+    transform: scale(0);
+    transition: transform 100ms;
+}
+
+
+.ranklist .quare{
+    width: 45px;
+    height: 3px;
+    background-color: rgba(242,242,242,0.9);
+    position: absolute;
+    left: 39%;
+    top: 23%;
+    transition: transform 200ms;
+    z-index: 4;
+}
+
+
+#youxiajiaosanbaotai{
+    cursor: pointer;
+    position: fixed;
+    right: 40px;
+    top:80%;
+    z-index: 3;
+}
+#youxiajiaosanbaotai div{
+    margin-bottom: 2px;
+}
+<!-- -->
+#sanjiao, #xiaobofang , #fankui{
+    width: 38px;
+    height: 38px;
+    border: #c9c9c9 solid 1px;
+    background-color: #ffffff;
+}
+<!-- -->
+#sanjiao img , #xiaobofang img{
+    width: 24px;
+    height: 24px;
+    margin: 6px 6px;
+}
+#fankui h4{
+    margin: 7px 0px 0px 3px ;
+    font-weight: 400;
+}
+
+<!-- -->
+#sanjiao:hover{
+    background-color: #ededed;
+}
+
+
+#fankui:hover{
+    background-color: #ededed;
+    color: #31C27C;
+}
+#xiaobofang:hover{
+    background-color: #ededed;
+
+}
+
+
+
 
 
 
